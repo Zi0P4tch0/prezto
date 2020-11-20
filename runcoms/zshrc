@@ -11,3 +11,15 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+unsetopt AUTO_NAME_DIRS
+setopt interactivecomments
+bindkey -e
+
+function vimeo-ref-dl() {
+   local URL=$(osascript -e "tell application \"Safari\" to return URL of front document")
+   youtube-dl -f "bestvideo+bestaudio/best" --merge-output-format mkv             \
+                                            --output "%(title)s.%(ext)s"          \
+                                            --referer "$URL"                      \
+                                            "https://player.vimeo.com/video/$1"
+ }
