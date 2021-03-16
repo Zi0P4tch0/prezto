@@ -249,20 +249,21 @@
       "Amphetamine": {
         "id": "937984704",
         "version": "5.1.1"
-      }
+      },
+      "MacFamilyTree 9": null
     },
     "tap": {
       "homebrew/cask": {
-        "revision": "135ba2ae8686758563d23c59cf2ae1c06361c837"
+        "revision": "ecaa8d6ae4ab128d123c222c36763b628c87eaea"
       }
     }
   },
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.0.5-42-ge3b451c",
+        "HOMEBREW_VERSION": "3.0.5-59-gd1fd7e3",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "9d920d505668b08d7c73df45a7068cb5a8ed994b",
+        "Homebrew/homebrew-core": "205b5f4343905c49528bc59ef1be60b72569543a",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.4",
         "macOS": "11.2.1"

@@ -30,3 +30,4 @@ mas "Magnet", id: 441258766
 mas "The Unarchiver", id: 425424353 
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Amphetamine", id: 937984704
+mas "MacFamilyTree 9", id: 1458866808
