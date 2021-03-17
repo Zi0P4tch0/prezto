@@ -22,6 +22,7 @@ brew "youtube-dl"
 brew "wget"
 brew "ffmpeg"
 brew "exa"
+brew "shellcheck"
 
 # Mac App Store
 brew "mas"
