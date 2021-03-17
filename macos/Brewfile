@@ -28,6 +28,8 @@ brew "cmatrix"
 brew "pipes-sh"
 brew "tmux"
 brew "cmus"
+brew "tty-clock"
+brew "ical-buddy"
 
 # Mac App Store
 brew "mas"
