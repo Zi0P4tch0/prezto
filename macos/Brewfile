@@ -23,6 +23,11 @@ brew "wget"
 brew "ffmpeg"
 brew "exa"
 brew "shellcheck"
+brew "htop"
+brew "cmatrix"
+brew "pipes-sh"
+brew "tmux"
+brew "cmus"
 
 # Mac App Store
 brew "mas"
