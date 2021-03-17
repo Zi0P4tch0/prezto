@@ -8,15 +8,24 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()            
 filetype plugin indent on  
 
+" NERDTree
+
+" Start NERDTree and put the cursor back in the other window.
 autocmd VimEnter * NERDTree | wincmd p
 
 " Exit Vim if NERDTree is the only window left.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
+
+" Set to auto read when a file is changed from the outside
+set autoread
+au FocusGained,BufEnter * checktime
 
 " Send more characters for redraws
 set ttyfast
@@ -85,5 +94,16 @@ set magic
 set showmatch 
 " How many tenths of a second to blink when matching brackets
 set mat=2
+
+" No annoying sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+
+" Visual mode pressing * or # searches for the current selection
+" Super useful! From an idea by Michael Naumann
+vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
+vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
 syntax on
