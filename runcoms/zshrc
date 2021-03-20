@@ -29,6 +29,8 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Secretive
 export SSH_AUTH_SOCK=/Users/matteo/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 
+cat ~/.cache/wal/sequences
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
